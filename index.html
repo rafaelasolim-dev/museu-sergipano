@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança Sergipana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero museum-hero" id="inicio">
+        <nav class="menu" aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#acervo">Acervo</a>
+            <a href="#territorios">Territórios</a>
+            <a href="#linha-tempo">Linha do tempo</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contribuir">Contribuir</a>
+        </nav>
+
+        <div class="xilo-frame museum-label">
+            <p class="tag">Museu digital • Sergipe</p>
+            <h1>Herança Sergipana</h1>
+            <p class="subtitle">
+                Um acervo virtual para guardar fotografias, documentos, objetos, vozes,
+                festas, bairros, cidades históricas, praias, sertão, arquitetura, gastronomia
+                e histórias do povo sergipano.
+            </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#acervo">Entrar no acervo</a>
+                <button class="button" id="surpriseBtn" type="button">Abrir uma memória</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro museum-intro">
+            <div>
+                <span class="section-kicker">Proposta curatorial</span>
+                <h2>Quase tudo pode virar acervo quando preserva uma memória.</h2>
+            </div>
+            <p>
+                Este museu digital organiza Sergipe por histórias: fotos antigas, documentos,
+                objetos cotidianos, depoimentos, festas, receitas, bairros de Aracaju,
+                cidades históricas e paisagens do litoral ao sertão.
+            </p>
+        </section>
+
+        <section class="collection-dashboard" id="acervo">
+            <div class="section-title">
+                <span class="section-kicker">Acervo virtual</span>
+                <h2>Categorias de memória</h2>
+            </div>
+
+            <div class="collection-grid">
+                <article>
+                    <strong>01</strong>
+                    <h3>Fotografias e documentos</h3>
+                    <p>Fotos de família, cartas, jornais, mapas, registros escolares e lembranças de bairros.</p>
+                </article>
+                <article>
+                    <strong>02</strong>
+                    <h3>Artes visuais e digitais</h3>
+                    <p>Pinturas, desenhos, xilogravuras, colagens, fotografias autorais e releituras do cordel.</p>
+                </article>
+                <article>
+                    <strong>03</strong>
+                    <h3>Objetos históricos</h3>
+                    <p>Moedas, roupas, ferramentas, utensílios, peças religiosas, artesanato e objetos do cotidiano.</p>
+                </article>
+                <article>
+                    <strong>04</strong>
+                    <h3>Memória oral e audiovisual</h3>
+                    <p>Depoimentos, entrevistas, vídeos de festas, sons de feira, forró, barcos de fogo e quadrilhas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="destinations" id="territorios">
+            <div class="section-title">
+                <span class="section-kicker">Núcleos da exposição</span>
+                <h2>Territórios, pessoas e tradições</h2>
+            </div>
+
+            <div class="cards museum-cards">
+                <article class="card" data-destination="aracaju">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pra%C3%A7a%20dos%20Arcos%20-%20Aracaju.jpg" alt="Arcos da Orla de Atalaia, em Aracaju">
+                    <div class="card-body">
+                        <span>Urbanismo</span>
+                        <h3>Aracaju planejada</h3>
+                        <p>A capital nasceu em 1855 com traçado geométrico, ligada ao rio Sergipe e ao projeto de modernização da província.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="santo-antonio">
+                    <img src="https://www.guiadasemana.com.br/contentFiles/system/pictures/2010/12/8930/original/p-ara-colinadesantoantonio_r.jpg" alt="Vista urbana de Aracaju">
+                    <div class="card-body">
+                        <span>Bairro fundador</span>
+                        <h3>Santo Antônio</h3>
+                        <p>O alto de Santo Antônio guarda marcas antigas do povoamento e da mudança da capital para Aracaju.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="sao-cristovao">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Minist%C3%A9rio%20da%20Cultura%20-%20Pra%C3%A7a%20S%C3%A3o%20Francisco%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%20%28SE%29%20%286%29.jpg" alt="Praça São Francisco em São Cristóvão">
+                    <div class="card-body">
+                        <span>Cidade histórica</span>
+                        <h3>São Cristóvão</h3>
+                        <p>Casario, igrejas, Praça São Francisco e a memória da antiga capital sergipana.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="xingo">
+                    <img src="https://services.meteored.com/img/article/caatinga-o-bioma-brasileiro-que-oferece-varios-destinos-de-ecoturismo-1714668913358_1024.jpg" alt="Cânion do Xingó em Sergipe">
+                    <div class="card-body">
+                        <span>Sertão e rio</span>
+                        <h3>Xingó</h3>
+                        <p>O encontro entre sertão, arqueologia, paisagem e Rio São Francisco.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="estancia">
+                    <img src="https://portal.unit.br/wp-content/uploads/2025/06/IMG-2-1024x710.jpg">
+                    <div class="card-body">
+                        <span>Festa e invenção</span>
+                        <h3>Estância e barcos de fogo</h3>
+                        <p>Tradição junina, fogueteiros, engenho artesanal e memória coletiva.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="gastronomia">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caranguejo%20da%20Orla%20Atalaia%20-%20Aracaju%2C%20Sergipe%20-%20panoramio%20%281%29.jpg" alt="Caranguejo na Orla de Atalaia">
+                    <div class="card-body">
+                        <span>Saberes e sabores</span>
+                        <h3>Gastronomia sergipana</h3>
+                        <p>Caranguejo, mangaba, amendoim, milho, beiju, moquecas e receitas guardadas em família.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                
+
+                <article class="card" data-destination="personalidades">
+                    <img src="data:image/jpeg;base64,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" alt="Museu da Gente Sergipana">
+                    <div class="card-body">
+                        <span>Pessoas</span>
+                        <h3>Personalidades sergipanas</h3>
+                        <p>Artistas, escritores, políticos, atletas, educadores e mestres populares que projetaram Sergipe.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+
+                <article class="card" data-destination="receptividade">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0WFWMxuhE558u0SwfAfVquIBLAG23UFRSw&s">
+                    <div class="card-body">
+                        <span>Memória oral</span>
+                        <h3>Receptividade do povo</h3>
+                        <p>Histórias de feira, vizinhança, festas, acolhimento e modos de falar que formam identidade.</p>
+                        <button type="button" class="read-more">Abrir ficha</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline" id="linha-tempo">
+            <div class="section-title">
+                <span class="section-kicker">Linha do tempo</span>
+                <h2>Marcos para narrar Sergipe</h2>
+            </div>
+
+            <div class="timeline-list">
+                <article>
+                    <time>1590</time>
+                    <h3>Fundação de São Cristóvão</h3>
+                    <p>Uma das cidades mais antigas do Brasil e núcleo importante da formação histórica sergipana.</p>
+                </article>
+                <article>
+                    <time>1855</time>
+                    <h3>Aracaju vira capital</h3>
+                    <p>A transferência da capital marca um projeto urbano planejado e ligado ao rio, ao porto e à modernização.</p>
+                </article>
+                <article>
+                    <time>Década de 1930</time>
+                    <h3>Barco de fogo ganha forma</h3>
+                    <p>Em Estância, a invenção popular transforma fogo, madeira, papel e festa em patrimônio afetivo.</p>
+                </article>
+                <article>
+                    <time>2010</time>
+                    <h3>Praça São Francisco reconhecida</h3>
+                    <p>O conjunto de São Cristóvão é inscrito como Patrimônio Mundial pela UNESCO.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="galeria">
+            <div class="section-title">
+                <span class="section-kicker">Reserva técnica</span>
+                <h2>Galeria do acervo</h2>
+            </div>
+
+            <div class="filters" aria-label="Filtros da galeria">
+                <button class="filter active" type="button" data-filter="todos">Todos</button>
+                <button class="filter" type="button" data-filter="documentos">Documentos</button>
+                <button class="filter" type="button" data-filter="territorio">Território</button>
+                <button class="filter" type="button" data-filter="patrimonio">Patrimônio</button>
+                <button class="filter" type="button" data-filter="cultura">Cultura</button>
+            </div>
+
+            <div class="gallery">
+                <figure data-category="territorio">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arcos%20da%20Orla%20-%20Aracaju%20-%20Sergipe%20-%20panoramio.jpg" alt="Arcos da Orla de Atalaia">
+                    <figcaption>Fotografia: Arcos da Orla</figcaption>
+                </figure>
+                <figure data-category="cultura">
+                    <img src="https://s3.a8se.com/images/Captura_de_tela_2025-06-11_164805.2e16d0ba.fill-770x515.png" alt="Barco de fogo de Estância durante festejo junino">
+                    <figcaption>Tradição: Barco de fogo de Estância</figcaption>
+                </figure>
+                <figure data-category="patrimonio">
+                    <img src="https://www.aracaju.se.gov.br/userfiles/noticia_imagens/200501/19725/foto16451.jpg" alt="Vista da Colina do Santo Antônio em Aracaju">
+                    <figcaption>Território: Colina do Santo Antônio</figcaption>
+                </figure>
+                <figure data-category="cultura">
+                    <img src="https://www.se.gov.br/anexos/uploads/image/image/429985/f96496abf511b4fb794fce086c45d106.jpeg" alt="Rua São João em Aracaju decorada para festejos de forró">
+                    <figcaption>Memória oral: Rua São João</figcaption>
+                </figure>
+                <figure data-category="cultura">
+                    <img src="data:image/jpeg;base64,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" alt="Escultura do Largo da Gente Sergipana em Aracaju">
+                    <figcaption>Arte pública: Largo da Gente Sergipana</figcaption>
+                </figure>
+                <figure data-category="territorio">
+                    <img src="https://conteudo.solutudo.com.br/wp-content/uploads/2021/08/orla-do-por-do-sol.jpg" alt="Orla do por do sol">
+                    <figcaption>Paisagem: Orla do por do sol</figcaption>
+                </figure>
+                <figure data-category="territorio">
+                    <img src="https://aracajuturismo.com.br/wp-content/uploads/2022/01/catamara-1.jpg" alt="Cânion do Xingó com águas do Rio São Francisco">
+                    <figcaption>Paisagem: Xingó e Rio São Francisco</figcaption>
+                </figure>
+                <figure data-category="patrimonio">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Minist%C3%A9rio%20da%20Cultura%20-%20Pra%C3%A7a%20S%C3%A3o%20Francisco%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%20%28SE%29%20%286%29.jpg" alt="Praça São Francisco em São Cristóvão">
+                    <figcaption>Patrimônio: São Cristóvão</figcaption>
+                </figure>
+                <figure data-category="patrimonio">
+                    <img src="https://www.se.gov.br/anexos/uploads/image/image/338883/slide_eb94cf49be192a905cd05253c87a66f0.jpg" alt="Arte sacra de são Cristovão"
+                    <figcaption>Museu: Arte Sacra de São Cristóvão</figcaption>
+                </figure>
+                <figure data-category="territorio">
+                    <img src="https://turismosergipe.com.br/wp-content/uploads/2025/07/PASSARELA-DO-CARANGUEJO_MAX-CARLOS-2023-2-1024x683.jpg" alt="Escultura do caranguejo na Passarela do Caranguejo em Aracaju">
+                    <figcaption>Gastronomia: Caranguejo de Aracaju</figcaption>
+                </figure>
+                <figure data-category="cultura">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/d7/4c/46/caption.jpg?w=1200&h=1200&s=1" alt="Artesanato no Mercado Municipal de Aracaju">
+                    <figcaption>Objetos: Artesanatos do mercado</figcaption>
+                </figure>
+                <figure data-category="cultura">
+                    <img src="https://www.fashionbubbles.com/wp-content/uploads/2019/06/Quadrilha-junina-do-estado-de-Sergipe-Brasil.-2010.-credito-E-Sergipe.-Wikimedia-commons..jpg" alt="Quadrilha junina em Sergipe">
+                    <figcaption>Audiovisual: Quadrilha junina</figcaption>
+                </figure>
+                <figure data-category="documentos">
+                    <img src="https://jornaldacidade.net/uploads/2021/09/21/noticias/324410.jpg" alt="Museu da Gente Sergipana">
+                    <figcaption>Referência: Museu da Gente Sergipana</figcaption>
+                </figure>
+                <figure data-category="documentos">
+                    <img src="data:image/jpeg;base64,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" alt="Ponte do Imperador">
+                    <figcaption>História: Ponte do Imperador</figcaption>
+                </figure>
+                <figure data-category="documentos">
+                    <img src="https://www.destaquenoticias.com.br/wp-content/uploads/2025/03/aracaju-praca-fausto-cardoso.jpg" alt="Ponte do Imperador">
+                    <figcaption>Imagens Históricas: Praça Fausto Cardoso meados do séc XX </figcaption>
+                </figure>
+
+
+            </div>
+        </section>
+
+        <section class="culture" id="cultura">
+            <div class="section-title">
+                <span class="section-kicker">Sala de escuta</span>
+                <h2>O que ainda pode entrar no museu?</h2>
+            </div>
+
+            <div class="culture-grid">
+                <article>
+                    <h3>Depoimentos</h3>
+                    <p>Entrevistas com avós, mestres de quadrilha, rendeiras, pescadores, feirantes, fogueteiros e moradores antigos.</p>
+                </article>
+                <article>
+                    <h3>História dos bairros</h3>
+                    <p>Santo Antônio, Centro, Industrial, Atalaia, Bugio, Siqueira Campos e outros territórios afetivos de Aracaju.</p>
+                </article>
+                <article>
+                    <h3>Arquitetura e paisagem</h3>
+                    <p>Igrejas, sobrados, mercados, praças, praias, mangues, sertão e formas de morar em Sergipe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contribute" id="contribuir">
+            <div>
+                <span class="section-kicker">Acervo colaborativo</span>
+                <h2>Contribua com a Herança Sergipana</h2>
+                <p>
+                    Cadastre fotos, vídeos, relatos de viagens, festas típicas, pontos turísticos,
+                    receitas, documentos ou lembranças para alimentar o acervo virtual.
+                </p>
+            </div>
+
+            <form id="archiveForm" class="archive-form">
+                <label>
+                    Nome da pessoa colaboradora
+                    <input type="text" name="name" placeholder="Ex.: Maria Santos" required>
+                </label>
+                <label>
+                    Local da memória
+                    <input type="text" name="place" placeholder="Ex.: Estância, Xingó, Santo Antônio..." required>
+                </label>
+                <label>
+                    Tipo de contribuição
+                    <select name="type" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option>Fotografia de Sergipe</option>
+                        <option>Vídeo de festa típica</option>
+                        <option>Foto de viagem</option>
+                        <option>Ponto turístico</option>
+                        <option>Documento antigo</option>
+                        <option>Receita ou memória oral</option>
+                    </select>
+                </label>
+                <label>
+                    Arquivo de imagem ou vídeo
+                    <input type="file" name="media" accept="image/*,video/*">
+                </label>
+                <label class="full">
+                    História da peça
+                    <textarea name="story" placeholder="Conte o que aparece no arquivo, quando aconteceu e por que essa memória é importante." required></textarea>
+                </label>
+                <button class="button primary" type="submit">Enviar para o acervo</button>
+                <p class="feedback" id="feedback" aria-live="polite"></p>
+            </form>
+
+            <div class="submitted-collection" id="submittedCollection" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <dialog id="detailsModal">
+        <button class="close" type="button" aria-label="Fechar">×</button>
+        <img id="modalImage" src="" alt="">
+        <div class="modal-content">
+            <span id="modalTag"></span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </dialog>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close-lightbox" type="button" aria-label="Fechar imagem">×</button>
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+    <footer>
+        <p>Herança Sergipana © 2026</p>
+        <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
